@@ -12,7 +12,7 @@ STATUS_ACTION = [
  
 class Customer(models.Model): 
     id = models.AutoField
-    name_phuong = models.CharField('Tên Phuong', max_length=50)
+    name_phuong = models.CharField('Tên Phương', max_length=50)
     url_post = models.CharField('Đường dẫn Post', max_length=50)
     number_post = models.IntegerField('Số lần Post', default=0)
-    action = models.IntegerField('Hành Động', default=0, choices=STATUS_ACTION) 
+    action = models.IntegerField('Hành Động', default=0) 
